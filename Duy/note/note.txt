@@ -1,0 +1,30 @@
+📘 Tạp chí Code
+
+Ngôn ngữ cơ bản của Web: HTML
+
+Đăng bởi Laura Jones vào thứ Hai, ngày 21 tháng 6 năm 2027
+
+Tất cả các trang web và ứng dụng web hiện đại đều được xây dựng dựa trên ba công nghệ cơ bản: HTML, CSS và JavaScript. Đây là những ngôn ngữ của web.
+
+Trong bài viết này, chúng ta sẽ tập trung vào HTML. Chúng ta sẽ tìm hiểu HTML là gì và tại sao bạn cũng nên học nó.
+
+HTML là gì?
+HTML là viết tắt của HyperText Markup Language (Ngôn ngữ Đánh dấu Siêu văn bản). Đây là một ngôn ngữ đánh dấu mà các nhà phát triển web sử dụng để cấu trúc và mô tả nội dung của một trang web (không phải là ngôn ngữ lập trình).
+
+HTML bao gồm các phần tử mô tả các loại nội dung khác nhau: đoạn văn, liên kết, tiêu đề, hình ảnh, video, v.v. Trình duyệt web hiểu HTML và hiển thị mã HTML dưới dạng các trang web.
+
+Trong HTML, mỗi phần tử được tạo thành từ 3 phần:
+
+Thẻ mở
+Thẻ đóng
+Phần tử thực tế
+Bạn có thể tìm hiểu thêm tại MDN Web Docs.
+
+Tại sao bạn nên học HTML?
+Có vô số lý do để học ngôn ngữ cơ bản của web. Dưới đây là 5 lý do:
+
+Để có thể sử dụng ngôn ngữ lập trình web cơ bản
+Để tự tạo ra những trang web đẹp thay vì dựa vào các công cụ như WordPress hay Wix
+Để xây dựng các ứng dụng web
+Để gây ấn tượng với bạn bè
+Để vui vẻ 😃
