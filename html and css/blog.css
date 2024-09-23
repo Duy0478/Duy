@@ -1,0 +1,41 @@
+.mau {
+    color: rgb(255, 100, 100);
+    line-height: 2cap;
+}
+
+.container {
+    background-color: rgb(46, 4, 0);
+}
+
+.chinh_list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.chinh_list li {
+    margin-right: 20px;
+}
+
+.chinh_list li:last-child {
+    margin-right: 0;
+}
+
+.hover-area {
+    position: relative;
+    display: inline-block;
+}
+
+.hover-area:hover .dropdown {
+    display: block;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    background-color: pink;
+    border: 1px solid white;
+    padding: 10px;
+    z-index: 1;
+}
