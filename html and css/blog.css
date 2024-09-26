@@ -1,43 +1,67 @@
 .mau {
-    color: rgb(255, 182, 182);
-    line-height: 2cap;
+    color: rgb(255, 182, 182); /* Đặt màu chữ thành hồng nhạt */
+    line-height: 0; /* Giảm khoảng cách giữa các dòng xuống 0 */
+    margin: 40px;
+   
 }
 
-.container {
-    background-color: rgb(3, 55, 114);
-    width: 930px;
-    height: 98px;
+/*********************************************************************************************/
+/** điều chỉnh danh sách */
+.menu {
+    list-style: none; /* Xóa dấu đầu dòng cho danh sách */
+    padding: 2px; /* Thêm khoảng cách bên trong cho danh sách */
+    margin: 0; /* Đặt khoảng cách ngoài bằng 0 */
+    background-color: rgb(61, 56, 56); /* Đặt màu nền cho danh sách thành xám tối */
 }
 
-.chinh_list {
-    display: flex;
-    list-style: none;
-    padding: 0;
-    margin: 0;
+.menu li {
+    position: relative; /* Đặt bối cảnh định vị cho phần tử con */
+    display: inline-block; /* Hiển thị các phần tử danh sách theo hàng ngang */
+    background-color: rgb(59, 57, 57); /* Đặt màu nền cho từng phần tử danh sách */
+    width: 130px; /* Đặt chiều rộng cố định cho các phần tử danh sách */
 }
 
-.chinh_list li {
-    margin-right: 20px;
+.menu {
+    position: relative; /* Định vị phần tử menu */
+    display: inline-block; /* Hiển thị menu theo kiểu inline-block */
 }
 
-.chinh_list li:last-child {
-    margin-right: 0;
+.menu li a {
+    display: block; /* Làm cho liên kết chiếm toàn bộ không gian của phần tử cha */
+    padding: 15px; /* Thêm khoảng cách bên trong cho liên kết */
+    text-decoration: none; /* Xóa gạch chân khỏi liên kết */
 }
 
-.hover-area {
-    position: relative;
-    display: inline-block;
+.sumbmenu {
+    display: none; /* Ban đầu ẩn submenu */
+    position: absolute; /* Định vị submenu tuyệt đối */
+    top: 100%; /* Đưa submenu xuống ngay bên dưới phần tử cha */
+    left: 0; /* Căn lề bên trái với phần tử cha */
+    background-color: #555252; /* Đặt màu nền cho submenu thành xám tối */
+    list-style: none; /* Xóa dấu đầu dòng cho submenu */
+    padding: 0; /* Đặt khoảng cách bên trong bằng 0 */
+    margin: 0; /* Đặt khoảng cách ngoài bằng 0 */
 }
 
-.hover-area:hover .dropdown {
-    display: block;
+
+.sumbmenu li a {
+    padding: 10px; /* Thêm khoảng cách bên trong cho các liên kết trong submenu */
+    color: white; /* Đặt màu chữ thành trắng */
 }
 
-.dropdown {
-    display: none;
-    position: absolute;
-    background-color: pink;
-    border: 1px solid white;
-    padding: 10px;
-    z-index: 1;
+.menu li:hover .sumbmenu {
+    display: block; /* Hiện submenu khi di chuột qua phần tử danh sách */
+}
+
+menu li a:hover, .sumbmenu li a:hover {
+    background-color: #555; /* Đổi màu nền khi di chuột qua liên kết trong menu hoặc submenu */
+}
+/***88888888888888888888888888888888888888888888888888888*88888888888888**8888888888888888888888888888888888888888*/
+.div {
+    background-color: rgb(55, 0, 255);
+    height: 30px;
+    width: 125px;
+    align-content: center;
+    margin: 12px;
+    
 }
