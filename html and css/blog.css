@@ -9,16 +9,21 @@
 /** điều chỉnh danh sách */
 .menu {
     list-style: none; /* Xóa dấu đầu dòng cho danh sách */
-    padding: 2px; /* Thêm khoảng cách bên trong cho danh sách */
+    padding: 1px; /* Thêm khoảng cách bên trong cho danh sách */
     margin: 0; /* Đặt khoảng cách ngoài bằng 0 */
     background-color: rgb(61, 56, 56); /* Đặt màu nền cho danh sách thành xám tối */
+    position: relative;
+    z-index: 1; /* Thêm z-index */
 }
-
+.img-conten {
+    position: relative;
+    z-index: 0;} /* 
+Đảm bảo z-index nhỏ hơn */
 .menu li {
     position: relative; /* Đặt bối cảnh định vị cho phần tử con */
     display: inline-block; /* Hiển thị các phần tử danh sách theo hàng ngang */
     background-color: rgb(59, 57, 57); /* Đặt màu nền cho từng phần tử danh sách */
-    width: 130px; /* Đặt chiều rộng cố định cho các phần tử danh sách */
+    width: 128.4px; /* Đặt chiều rộng cố định cho các phần tử danh sách */
 }
 
 .menu {
@@ -57,11 +62,89 @@ menu li a:hover, .sumbmenu li a:hover {
     background-color: #555; /* Đổi màu nền khi di chuột qua liên kết trong menu hoặc submenu */
 }
 /***88888888888888888888888888888888888888888888888888888*88888888888888**8888888888888888888888888888888888888888*/
+/*bottom span dang ki background*/
 .div {
     background-color: rgb(55, 0, 255);
     height: 30px;
     width: 125px;
     align-content: center;
+    text-align: center;
+    
     margin: 12px;
     
 }
+/*content header*/
+.content{
+    margin: 30px;
+    padding: 10px;
+ }
+/*footer backgound*/
+.footer{
+    background-color: #666;
+}
+
+.footer-sitemap{
+    background-color: #605a5a;
+    align-content: center
+}
+
+.footer-sitemap a {
+   color: #ae9898;
+   
+}
+
+.footer li a{
+    color: white;
+}
+.img-content{
+    position: relative;
+    with:250px;
+}
+
+.img-content img {
+    width: 100%;
+    height: 450px;
+}
+.img-text{
+    position: relative;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%,-250%);
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: rgba(93, 70, 70, 0.5);
+    padding: 10px;
+    text-align: center;
+    
+}
+
+
+.p a{
+    color:red;
+}
+.b1{
+    color: red;
+}
+
+
+
+.h2 a {
+color: black;
+
+}
+
+
+
+
+.bocham li  {
+    list-style-type: none;
+}
+
+.trangweb_footer{
+    color: red;
+    text-align: center;
+    font-weight: bold;
+    transform: translate(45px,35px);
+}
+
