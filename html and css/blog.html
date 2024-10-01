@@ -8,151 +8,108 @@
     
 </head>
 <body>
-    <script src="blog.js">
+    <script src="blog.js"> 
     </script>
 
-
-    <!---   content header 1       -->
+    <!---   Nội dung tiêu đề 1       -->
     <header>
         <div>
-      
-       <!-----   menu          -->
-        <nav >
-           
-            <ul class="menu">
-                <h1 class="mau">BLOG</h1>          
-                <div align="right">
-                     <div class="timkiem" >
-                        <input type="text" name="" id="#">
-                        <style>
-                        .timkiem input{
-                        transform: translate(-40px,-30px);
-                        display: flex;
-                       
-                        padding: 5px;
-                    outline: 0; 
-                       }
+            <!-----   Menu          -->
+            <nav>
+                <ul class="menu"> <!-- Các mục trong menu -->
+                   
+                    <h1 align="left" class="mau">BLOG</h1> <!-- Tiêu đề của blog -->
+                   
+                    <div align="right"> <!-- Căn chỉnh phần tìm kiếm và đăng ký -->
+                        <div class="timkiem"> <!-- Phần tìm kiếm -->
+                            <input type="text" placeholder="Tìm kiếm" name="" id="blog.js"> <!-- Ô nhập tìm kiếm -->
+                            <style>
+                                .timkiem input {
+                                    transform: translate(-40px,-30px); /* Điều chỉnh vị trí ô nhập */
+                                    display: flex;
+                                    padding: 5px; /* Padding cho ô nhập */
+                                    outline: 0; 
+                                }
+                                .timkiem img {
+                                    display: block;   
+                                    transform: translate(-40px,-58px); /* Điều chỉnh vị trí biểu tượng tìm kiếm */
+                                    width: 30px; /* Chiều rộng biểu tượng */
+                                    height: 30px; /* Chiều cao biểu tượng */
+                                }
                         
-                        .timkiem img {
-                            display: block;   
-                            transform: translate(-40px,-58px);
-                                width:30px ;
-                                height: 30px;
-                            }
-                           .timkiem a  {
-                            color: gray;
-                            display: block;
-                            padding: 10px;
-                            transform: translate(-88px,-95px);
-                          
-                            
-                            
-                           }
-                           </style>
-                       
-                         <img src="./jpg/img điều hướng/search-vector-icon-on-transparent-260nw-1135840928_preview_rev_1.png" alt="Lỗi">
-                         <div class="nhaynhanh" >
-                          <a>Tìm kiếm</a>
-                         </div>
+                            </style>
+                            <img src="./jpg/img điều hướng/search-vector-icon-on-transparent-260nw-1135840928_preview_rev_1.png" alt="Lỗi" onclick="console.log('đang kiếm')"> <!-- Biểu tượng tìm kiếm -->
                         </div>
-               
-                    <div class="div">
-                    <a href="#" style="text-decoration: none;">  <span style="color: white;"><b>Đăng Ký tư vấn</b></span></a>
-                </div>
-            </div>
-                <li><a href="#" onclick="alert('Trang chủ')"><span style="color: rgb(255, 255, 255);"><h3>Trang Chủ</h3></span></a></li>
-                <li><a href="index.html" onclick="alert('Chương trình học')"><span style="color: rgb(255, 255, 255);"><h3>Chương trình học</h3></span></a></li>
-                <li>
-                    <span style="color: rgb(255, 255, 255);font-weight: bold;"><h3>Đội Ngũ</h3></span>
-                    <ul class="sumbmenu">
-                        <li><a href="#" onclick="alert('Tutor')"><span style="color: rgb(255, 255, 255);">Tutor</span></a></li>
-                        <li><a href="#" onclick="alert('Gia Sư')"><span style="color: rgb(255, 255, 255);">Gia Sư</span></a></li>
-                    </ul>
-                </li>
-                <li><a href="#"><span style="color: rgb(255, 255, 255);"><h3>Sự Kiện</h3></span></a></li>
-                <li><a href="#"><span style="color: rgb(255, 255, 255);"><h3>Hướng Nghiệp</h3></span></a></li>
-                <li><a href="#"><span style="color: rgb(255, 255, 255);"><h3>Học đường</h3></span></a></li>
-                <li><a href="index.html" onclick="alert('Chào mừng đến với trường học của chúng tôi')"><span style="color: rgb(255, 255, 255);"><h3>Vào Học</h3></span></a></li>
-            </ul>
-        
-        </nav>
-    </div>
-    </header>
-    <div class="img-content">
-        <img src="./jpg/lovepik-student-image-png-image_400945076_wh1200.png" alt="Lỗi ảnh" 
-            height="350px"
-            width="980px"   >
-            <div class="img-text"><h2>Những trải nghiệm và phiêu lưu của Du Học Sinh Việt Nam</h2></div>
+                        <div class="div">
+                            <a href="#" style="text-decoration: none;"> <!-- Liên kết đăng ký tư vấn -->
+                                <span style="color: white;"><b>Đăng Ký tư vấn</b></span>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Các mục menu với thông báo alert -->
+                    <li><a href="#" onclick="alert('Trang chủ')"><span style="color: rgb(255, 255, 255);"><h3>Trang Chủ</h3></span></a></li>
+                    <li><a href="index.html" onclick="alert('Chương trình học')"><span style="color: rgb(255, 255, 255);"><h3>Chương trình học</h3></span></a></li>
+                    <li>
+                        <span style="color: rgb(255, 255, 255);font-weight: bold;"><h3>Đội Ngũ</h3></span>
+                        <ul class="sumbmenu"> <!-- Menu con cho Đội ngũ -->
+                            <li><a href="#" onclick="alert('Tutor')"><span style="color: rgb(255, 255, 255);">Tutor</span></a></li>
+                            <li><a href="#" onclick="alert('Gia Sư')"><span style="color: rgb(255, 255, 255);">Gia Sư</span></a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#"><span style="color: rgb(255, 255, 255);"><h3>Sự Kiện</h3></span></a></li>
+                    <li><a href="#"><span style="color: rgb(255, 255, 255);"><h3>Hướng Nghiệp</h3></span></a></li>
+                    <li><a href="#"><span style="color: rgb(255, 255, 255);"><h3>Học đường</h3></span></a></li>
+                    <li><a href="index.html" onclick="alert('Chào mừng đến với trường học của chúng tôi')"><span style="color: rgb(255, 255, 255);"><h3>Vào Học</h3></span></a></li>
+                </ul>
+            </nav>
         </div>
+    </header>
+    
+    <!--- Phần nội dung hình ảnh -->
+    <div class="img-content">
+        <img src="./jpg/lovepik-student-image-png-image_400945076_wh1200.png" alt="Lỗi ảnh" height="1360px" width="540px"> <!-- Hình ảnh với kích thước -->
+        <h2>Những trải nghiệm và phiêu lưu của Du Học Sinh Việt Nam</h2><!-- Chú thích hình ảnh -->
+    </div>
 
-    
-    
-    
-    
-    
-    
-    
-    
-    <!---  content Header 2   -->
-        <Header class="content">
-       <h1>Sơ lược & Blog sinh viên</h1>
-       <p>Bấm vào blog sinh viên để đọc về những trải nghiệm của các sinh viên đã học ở nước ngoài. Bạn sẽ hiểu được trở thành sinh viên quốc tế là như thế nào và việc học ở một đất nước hay học viện nào đó sẽ ra sao.</p> 
+    <!---  Nội dung tiêu đề 2   -->
+    <Header class="content">
+        <h1>Sơ lược & Blog sinh viên</h1> <!-- Tiêu đề phần nội dung -->
+        <p>Bấm vào blog sinh viên để đọc về những trải nghiệm của các sinh viên đã học ở nước ngoài. Bạn sẽ hiểu được trở thành sinh viên quốc tế là như thế nào và việc học ở một đất nước hay học viện nào đó sẽ ra sao.</p>
         <p>Ngoài kinh nghiệm đại học, bạn có thể tìm hiểu sinh viên làm gì vào thời gian rảnh và cách họ đang cảm nhận cuộc sống ở điểm đến học tập mà mình đã chọn.</p>
         <p>Bấm vào miêu tả sơ lược sinh viên để đọc những bài phỏng vấn với du học sinh Việt Nam.</p>
         <p>Chúng tôi hỏi các du học sinh họ thích gì về điểm đến và học viện đã chọn, và về những thử thách mà họ đã đối mặt. Họ cho chúng tôi biết về cách họ nghĩ mình sẽ được lợi từ kinh nghiệm học tập và gửi lời khuyên tới các sinh viên khác đang cân nhắc chuyện du học.</p>
-        <p class="p">Nếu bạn là sinh viên Việt Nam hiện đang học ở nước ngoài hoặc nếu trước kia bạn đã học ở nước ngoài và muốn chia sẻ câu chuyện của mình, vui lòng email cho chúng tôi tại <a href="#" style="text-decoration: none;"> kinbingo@gmail.com</a></p>
-      <article>
-     
-     
-        <div>
-        <img src="./jpg/img du học sinh/Thao-Nguyen.jpg"  alt="lỗi ảnh" srcset="./img/img du học sinh/Thao-Nguyen.jpg" 480w,image-medium.jpg 800w,image-large.jpg 1200w
-     height="250px"  width="250px" sizes="(max-width:479px) 100vw,(max-width:800px)50vw,33vw" >
-       <h2 class="h2"> <a href="" style="text-decoration:none;">Thao Nguyen Lane Communicy Colloege</a></h3>
-      </div>
-
-
-
-
-      </article>
-
-
-
-
-
-
-
+        <p class="p">Nếu bạn là sinh viên Việt Nam hiện đang học ở nước ngoài hoặc nếu trước kia bạn đã học ở nước ngoài và muốn chia sẻ câu chuyện của mình, vui lòng email cho chúng tôi tại <a href="#" style="text-decoration: none;"> kinbingo@gmail.com</a></p> <!-- Liên kết email để chia sẻ câu chuyện -->
+        <article>
+            <div class="img-sinhvien">
+                <img src="./jpg/img du học sinh/Thao-Nguyen.jpg" alt="lỗi ảnh"> <!-- Hình ảnh của sinh viên với kích thước responsive -->
+                <h2><a href="" style="text-decoration:none;">Thao Nguyen Lane Communicy Colloege</a></h2> <!-- Liên kết tiêu đề blog -->
+            </div>
+        </article>
     </Header>
    
-<!---       content footer   -->
-<footer class="footer">
- 
- <br>
-    <ul class="bocham">
-        <p class="trangweb_footer">Trang web này được sở hữu và điều hành bởi Target Student Media Ltd</p> 
-    <li><a href="#" style="text-decoration: none;">Điều khoản và điều kiện</a></span></li>
-    <li><a href="#" style="text-decoration: none;">Chính sách Quyền riêng tư</a></li>
-   
-</ul>
-<br>
-<br>
-
-<nav>
-
-    <ul class="bocham">
-   <h3> <b class="b1" >Bài đăng gần đây</b> </h3>   
-    <li><a href="#" style="text-decoration: none;">Chăm sóc y tế cho sinh viên quốc tế tại Hoa Kỳ: Những điều cần biết</a></li>
-    <li><a href="#" style="text-decoration: none;">Năm lý do nên cân nhắc du học tại cao đằng cộng đồng</a></li>
-    <li><a href="#" style="text-decoration: none;">Bạn đang định du học tại Canada?</a></li>
-    <li><a href="#" style="text-decoration: none;">Giải pháp học Online</a></li>
-</ul>
-      <div class="footer-sitemap">
-         <div align="center">  
-        <p><a href="#" style="text-decoration: none;">Sitemap  :  9/30/2024</a></p>       
-         </div>
-        </div>
-    </nav>
+    <!---       Nội dung chân trang   -->
+    <footer class="footer">
+        <br>
+        <ul class="bocham"> <!-- Các liên kết ở chân trang -->
+            <p class="trangweb_footer">Trang web này được sở hữu và điều hành bởi Target Student Media Ltd</p> 
+            <li><a href="#" style="text-decoration: none;">Điều khoản và điều kiện</a></li> <!-- Liên kết đến điều khoản và điều kiện -->
+            <li><a href="#" style="text-decoration: none;">Chính sách Quyền riêng tư</a></li> <!-- Liên kết đến chính sách quyền riêng tư -->
+        </ul>
+        <br>
+        <br>
+        <nav>
+            <ul class="bocham">
+                <h3><b class="b1">Bài đăng gần đây</b></h3> <!-- Tiêu đề các bài đăng gần đây -->
+                <li><a href="#" style="text-decoration: none;">Chăm sóc y tế cho sinh viên quốc tế tại Hoa Kỳ: Những điều cần biết</a></li> <!-- Liên kết đến bài viết gần đây -->
+                <li><a href="#" style="text-decoration: none;">Năm lý do nên cân nhắc du học tại cao đằng cộng đồng</a></li>
+                <li><a href="#" style="text-decoration: none;">Bạn đang định du học tại Canada?</a></li>
+                <li><a href="#" style="text-decoration: none;">Giải pháp học Online</a></li>
+            </ul>
+            <div class="footer-sitemap">
+                <div align="center">  
+                    <p><a href="#" style="text-decoration: none;">Sitemap  :  9/30/2024</a></p> <!-- Liên kết đến sitemap -->
+                </div>
+            </div>
+        </nav>
     </footer>
-
-
 </body>
-</html>

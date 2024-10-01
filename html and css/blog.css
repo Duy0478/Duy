@@ -1,42 +1,57 @@
 .mau {
+    font-size: 300%;
     color: rgb(255, 182, 182); /* Đặt màu chữ thành hồng nhạt */
-    line-height: 0; /* Giảm khoảng cách giữa các dòng xuống 0 */
-    margin: 40px;
-   
+    line-height: 0; /* Giảm khoảng cách giữa các dòng xuống () */
+    margin: 40px; /* Đặt khoảng cách ngoài cho phần tử */
+    top: 0;
+    padding: 0;
+    transform: translate(0,40px);
 }
 
 /*********************************************************************************************/
 /** điều chỉnh danh sách */
 .menu {
     list-style: none; /* Xóa dấu đầu dòng cho danh sách */
-    padding: 1px; /* Thêm khoảng cách bên trong cho danh sách */
-    margin: 0; /* Đặt khoảng cách ngoài bằng 0 */
+    padding-bottom: 0; /* Thêm khoảng cách bên trong cho danh sách */
+    margin: -20px; /* Đặt khoảng cách ngoài bằng 0 */
     background-color: rgb(61, 56, 56); /* Đặt màu nền cho danh sách thành xám tối */
-    position: relative;
-    z-index: 1; /* Thêm z-index */
+    position: fixed; /* Định vị phần tử */
+    z-index: 1; /* Thêm z-index để đảm bảo thứ tự hiển thị */
+    font-size: 100%;
+    text-align: center;
+    display: block;
+    top: 0;
+    
 }
-.img-conten {
-    position: relative;
-    z-index: 0;} /* 
-Đảm bảo z-index nhỏ hơn */
+
+.img-content {
+    position: relative; /* Định vị phần tử */
+    z-index: 0; /* Đảm bảo z-index nhỏ hơn so với menu */
+}
+
+/* Định nghĩa các phần tử danh sách */
 .menu li {
     position: relative; /* Đặt bối cảnh định vị cho phần tử con */
     display: inline-block; /* Hiển thị các phần tử danh sách theo hàng ngang */
     background-color: rgb(59, 57, 57); /* Đặt màu nền cho từng phần tử danh sách */
-    width: 128.4px; /* Đặt chiều rộng cố định cho các phần tử danh sách */
+    width: 265px; /* Đặt chiều rộng cố định cho các phần tử danh sách */
+    height: auto; /* Chiều cao tự động */
+    
 }
 
 .menu {
     position: relative; /* Định vị phần tử menu */
     display: inline-block; /* Hiển thị menu theo kiểu inline-block */
+
 }
 
 .menu li a {
     display: block; /* Làm cho liên kết chiếm toàn bộ không gian của phần tử cha */
-    padding: 15px; /* Thêm khoảng cách bên trong cho liên kết */
+    padding: 1px; /* Thêm khoảng cách bên trong cho liên kết */
     text-decoration: none; /* Xóa gạch chân khỏi liên kết */
 }
 
+/* Định nghĩa submenu */
 .sumbmenu {
     display: none; /* Ban đầu ẩn submenu */
     position: absolute; /* Định vị submenu tuyệt đối */
@@ -44,107 +59,156 @@
     left: 0; /* Căn lề bên trái với phần tử cha */
     background-color: #555252; /* Đặt màu nền cho submenu thành xám tối */
     list-style: none; /* Xóa dấu đầu dòng cho submenu */
-    padding: 0; /* Đặt khoảng cách bên trong bằng 0 */
-    margin: 0; /* Đặt khoảng cách ngoài bằng 0 */
-}
+    padding: 1px; /* Đặt khoảng cách bên trong bằng 0 */
+    margin-top: 0; /* Đặt khoảng cách ngoài bằng 0 */
+    z-index: 3; /* Đặt z-index cao hơn để hiển thị trên các phần tử khác */
 
+}
 
 .sumbmenu li a {
     padding: 10px; /* Thêm khoảng cách bên trong cho các liên kết trong submenu */
     color: white; /* Đặt màu chữ thành trắng */
 }
 
+/* Hiện submenu khi di chuột qua phần tử danh sách */
 .menu li:hover .sumbmenu {
     display: block; /* Hiện submenu khi di chuột qua phần tử danh sách */
 }
 
-menu li a:hover, .sumbmenu li a:hover {
+/* Đổi màu nền khi di chuột qua liên kết */
+.menu li a:hover, .sumbmenu li a:hover {
     background-color: #555; /* Đổi màu nền khi di chuột qua liên kết trong menu hoặc submenu */
 }
+
 /***88888888888888888888888888888888888888888888888888888*88888888888888**8888888888888888888888888888888888888888*/
-/*bottom span dang ki background*/
+/* Đặt màu nền cho div  (nút đăng kí)dưới cùng */
 .div {
-    background-color: rgb(55, 0, 255);
-    height: 30px;
-    width: 125px;
-    align-content: center;
+    background-color: rgb(55, 0, 255); /* Màu nền */
+    height: 35px; /* Chiều cao */
+    width: 125px; /* Chiều rộng */
+    transform: translate(-12px,-50px); /* Di chuyển vị trí */
+    margin: 26px; /* Khoảng cách ngoài */
+    align-content: center; /* Căn giữa nội dung */
     text-align: center;
-    
-    margin: 12px;
-    
-}
-/*content header*/
-.content{
-    margin: 30px;
-    padding: 10px;
- }
-/*footer backgound*/
-.footer{
-    background-color: #666;
+    display: block;
 }
 
-.footer-sitemap{
-    background-color: #605a5a;
-    align-content: center
+/* Định nghĩa content header */
+.content {
+    margin: 30px; /* Khoảng cách ngoài */
+    padding: -10%; /* Khoảng cách bên trong */
+    font-size: 20px;
+}
+
+/* Đặt màu nền cho footer */
+.footer {
+    background-color: #666; /* Màu nền */
+    unicode-range: U+00-52F, U+1E00-1FFF, U+2200-22FF;
+}
+
+.footer-sitemap {
+    background-color: #605a5a; /* Màu nền cho sitemap */
+    align-content: center; /* Căn giữa nội dung */
 }
 
 .footer-sitemap a {
-   color: #ae9898;
-   
+    color: #ae9898; /* Màu chữ cho các liên kết trong sitemap */
 }
 
-.footer li a{
-    color: white;
-}
-.img-content{
-    position: relative;
-    with:250px;
+.footer li a {
+    color: white; /* Màu chữ cho các liên kết trong footer */
 }
 
-.img-content img {
-    width: 100%;
-    height: 450px;
-}
-.img-text{
-    position: relative;
-    top: 100%;
-    left: 50%;
-    transform: translate(-50%,-250%);
-    color: white;
-    font-size: 20px;
-    font-weight: bold;
-    background-color: rgba(93, 70, 70, 0.5);
-    padding: 10px;
-    text-align: center;
+/* Định nghĩa nội dung hình ảnh (ảnh chính) */
+.img-content {
+    position: relative; /* Định vị phần tử */
+    padding-top: 10px; /* Khoảng cách trên */
+    display: inline-block;
     
 }
 
-
-.p a{
-    color:red;
-}
-.b1{
-    color: red;
-}
-
-
-
-.h2 a {
-color: black;
-
+.img-content img {
+    width: 1808px; /* Chiều rộng hình ảnh */
+    height: 650px; /* Chiều cao */
+    object-fit: none; /* Cách xử lý hình ảnh */
+    position: relative; /* Định vị phần tử */
+    display: block;
 }
 
-
-
-
-.bocham li  {
-    list-style-type: none;
+.img-content h2{
+    position: relative; /* Định vị phần tử */
+  
+    transform: translate(25.5%,-550%); /* Di chuyển vị trí */
+    color: white; 
+    font-size: 40px; /* Kích thước chữ */
+    font-weight: bold; /* Đậm chữ */
+    background-color: rgba(93, 70, 70, 0.5); /* Màu nền với độ trong suốt */
+    padding: 10px; /* Khoảng cách bên trong */
+    text-align: center; /* Căn giữa nội dung */
+    width: 1180px;
+    height: auto;
+    display: inline-block;
+    z-index: 2;
 }
-
-.trangweb_footer{
-    color: red;
-    text-align: center;
+h2{
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
     font-weight: bold;
-    transform: translate(45px,35px);
+    unicode-bidi: is
 }
 
+/* img sinh viên*/
+.img-sinhvien {
+    position: relative;
+    margin: 30px;
+    padding: 0;
+    display:block;
+}
+.img-sinhvien img{
+    width: 400px;
+    height: auto;
+    
+
+
+}
+.img-sinhvien a {
+    color: black;
+    font-weight: bold;
+    align-content: center;
+    font-family:  'Arial';
+    font-size:22.3px;
+    margin: 0;
+    border: 0;
+    padding: 0;
+  
+}
+
+
+
+
+
+/* Định nghĩa màu chữ cho liên kết */
+.p a {
+    color: red; 
+}
+
+.b1 {
+    color: red; 
+}
+
+
+/* Định nghĩa danh sách không có dấu đầu dòng */
+.bocham li {
+    list-style-type: none; /* Xóa dấu đầu dòng */
+}
+
+/* Định nghĩa màu chữ cho footer */
+.trangweb_footer {
+    color: red; 
+    font-weight: bold; 
+    display: inline-block; /* Hiển thị theo kiểu inline-block */
+}
