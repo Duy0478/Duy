@@ -6,8 +6,27 @@
     top: 0;
     padding: 0;
     transform: translate(0,40px);
+   
 }
+@media (max-width: 600px) { 
+    header, footer {  
+        font-size: 1.2rem; /* Chỉnh sửa kích thước font cho nhỏ hơn */  
+    }  
+}
+.header-top{
+  
+   
+    background-color: rgb(61, 56, 56); /* Đặt màu nền cho danh sách thành xám tối */
+    position: relative;
+    display: block;
+    z-index: 4;
+    margin:0 ;
+    padding-bottom: 0;
+    flex-wrap: wrap;
+    height: 258.1px;
+    outline: auto;
 
+}
 /*********************************************************************************************/
 /** điều chỉnh danh sách */
 .menu {
@@ -18,14 +37,16 @@
     position: fixed; /* Định vị phần tử */
     z-index: 1; /* Thêm z-index để đảm bảo thứ tự hiển thị */
     font-size: 100%;
-    text-align: center;
+    align-items: center;
+    justify-content: center;
     display: block;
     top: 0;
-    
+    text-align: center;
+    flex-wrap: wrap ;
 }
 
 .img-content {
-    position: relative; /* Định vị phần tử */
+    position: fixed; /* Định vị phần tử */
     z-index: 0; /* Đảm bảo z-index nhỏ hơn so với menu */
 }
 
@@ -40,7 +61,7 @@
 }
 
 .menu {
-    position: relative; /* Định vị phần tử menu */
+    position: fixed; /* Định vị phần tử menu */
     display: inline-block; /* Hiển thị menu theo kiểu inline-block */
 
 }
@@ -61,7 +82,7 @@
     list-style: none; /* Xóa dấu đầu dòng cho submenu */
     padding: 1px; /* Đặt khoảng cách bên trong bằng 0 */
     margin-top: 0; /* Đặt khoảng cách ngoài bằng 0 */
-    z-index: 3; /* Đặt z-index cao hơn để hiển thị trên các phần tử khác */
+    z-index: 9; /* Đặt z-index cao hơn để hiển thị trên các phần tử khác */
 
 }
 
@@ -69,6 +90,7 @@
     padding: 10px; /* Thêm khoảng cách bên trong cho các liên kết trong submenu */
     color: white; /* Đặt màu chữ thành trắng */
 }
+    
 
 /* Hiện submenu khi di chuột qua phần tử danh sách */
 .menu li:hover .sumbmenu {
@@ -77,7 +99,7 @@
 
 /* Đổi màu nền khi di chuột qua liên kết */
 .menu li a:hover, .sumbmenu li a:hover {
-    background-color: #555; /* Đổi màu nền khi di chuột qua liên kết trong menu hoặc submenu */
+    background-color: gray; /* Đổi màu nền khi di chuột qua liên kết trong menu hoặc submenu */
 }
 
 /***88888888888888888888888888888888888888888888888888888*88888888888888**8888888888888888888888888888888888888888*/
@@ -95,20 +117,28 @@
 
 /* Định nghĩa content header */
 .content {
-    margin: 30px; /* Khoảng cách ngoài */
+    top: 100%;
+    transform: translate(0,-450px);
+    justify-content: center;
+    margin: 300px; /* Khoảng cách ngoài */
     padding: -10%; /* Khoảng cách bên trong */
     font-size: 20px;
+    display: inline-block;
+    text-transform: none;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
 }
 
 /* Đặt màu nền cho footer */
 .footer {
     background-color: #666; /* Màu nền */
-    unicode-range: U+00-52F, U+1E00-1FFF, U+2200-22FF;
+    
 }
 
 .footer-sitemap {
     background-color: #605a5a; /* Màu nền cho sitemap */
     align-content: center; /* Căn giữa nội dung */
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .footer-sitemap a {
@@ -117,79 +147,9 @@
 
 .footer li a {
     color: white; /* Màu chữ cho các liên kết trong footer */
-}
-
-/* Định nghĩa nội dung hình ảnh (ảnh chính) */
-.img-content {
-    position: relative; /* Định vị phần tử */
-    padding-top: 10px; /* Khoảng cách trên */
-    display: inline-block;
-    
-}
-
-.img-content img {
-    width: 1808px; /* Chiều rộng hình ảnh */
-    height: 650px; /* Chiều cao */
-    object-fit: none; /* Cách xử lý hình ảnh */
-    position: relative; /* Định vị phần tử */
-    display: block;
-}
-
-.img-content h2{
-    position: relative; /* Định vị phần tử */
-  
-    transform: translate(25.5%,-550%); /* Di chuyển vị trí */
-    color: white; 
-    font-size: 40px; /* Kích thước chữ */
-    font-weight: bold; /* Đậm chữ */
-    background-color: rgba(93, 70, 70, 0.5); /* Màu nền với độ trong suốt */
-    padding: 10px; /* Khoảng cách bên trong */
-    text-align: center; /* Căn giữa nội dung */
-    width: 1180px;
-    height: auto;
-    display: inline-block;
-    z-index: 2;
-}
-h2{
-    display: block;
-    font-size: 1.5em;
-    margin-block-start: 0.83em;
-    margin-block-end: 0.83em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-weight: bold;
-    unicode-bidi: is
-}
-
-/* img sinh viên*/
-.img-sinhvien {
-    position: relative;
-    margin: 30px;
-    padding: 0;
-    display:block;
-}
-.img-sinhvien img{
-    width: 400px;
-    height: auto;
-    
-
+    font-family: Arial, Helvetica, sans-serif;    
 
 }
-.img-sinhvien a {
-    color: black;
-    font-weight: bold;
-    align-content: center;
-    font-family:  'Arial';
-    font-size:22.3px;
-    margin: 0;
-    border: 0;
-    padding: 0;
-  
-}
-
-
-
-
 
 /* Định nghĩa màu chữ cho liên kết */
 .p a {
@@ -198,6 +158,7 @@ h2{
 
 .b1 {
     color: red; 
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 
@@ -211,4 +172,97 @@ h2{
     color: red; 
     font-weight: bold; 
     display: inline-block; /* Hiển thị theo kiểu inline-block */
+    font-size: 1em;
+    font-family:Arial, Helvetica, sans-serif;
 }
+
+
+
+/* Định nghĩa nội dung hình ảnh (ảnh chính) */
+.img-content {
+    position: relative; /* Định vị phần tử */
+    padding-top: 10px; /* Khoảng cách trên */
+    display: inline-flex;
+    flex-wrap: wrap;
+    
+    
+}
+
+.img-content img {
+    width: 1800px; /* Chiều rộng hình ảnh */
+    height: 650px; /* Chiều cao */
+    object-fit: none; /* Cách xử lý hình ảnh */
+    position: relative; /* Định vị phần tử */
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.img-content h2{
+    position: relative; /* Định vị phần tử */
+    left: -0.1cm;
+    transform: translate(25.5%,-275%); /* Di chuyển vị trí */
+    color: white; 
+    font-size: 61px; /* Kích thước chữ */
+    font-weight: bold; /* Đậm chữ */
+    background-color: rgba(93, 70, 70, 0.5); /* Màu nền với độ trong suốt */
+    padding: 8px; /* Khoảng cách bên trong */
+    text-align: center; /* Căn giữa nội dung */
+    width: 1181px;
+    height: auto;
+    display: inline-block;
+    z-index: 2;
+}
+h2{
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+}
+
+/* img sinh viên*/
+.img-sinhvien {
+    position: relative;
+    margin: 20px;
+    padding: 0;
+    display:block;
+    left: -90px;
+    line-height: 1em;
+    text-transform: none;
+}
+.img-sinhvien img{
+    width: 400px;
+    height: auto;
+    top: 0;
+    left: 0;
+    position: relative;
+    padding-bottom: 0;
+    display: inline-block;
+}
+.img-sinhvien a {
+    top: 0;
+    color: black;
+    font-weight: bold;
+    align-content: center;
+    font-family:  'Arial';
+    font-size:22.3px;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    text-decoration: none;
+    display: inline;
+    
+}
+.img-sinhvien li {
+   
+    list-style: none;
+    display: inline-block;
+    padding: 30px;
+}
+
+
+
