@@ -1,3 +1,6 @@
+body{
+    font-family:Arial, Helvetica, sans-serif;
+}
 .mau {
     font-size: 300%;
     color: rgb(255, 182, 182); /* Đặt màu chữ thành hồng nhạt */
@@ -8,25 +11,10 @@
     transform: translate(0,40px);
    
 }
-@media (max-width: 600px) { 
-    header, footer {  
-        font-size: 1.2rem; /* Chỉnh sửa kích thước font cho nhỏ hơn */  
-    }  
-}
-.header-top{
-  
-   
-    background-color: rgb(61, 56, 56); /* Đặt màu nền cho danh sách thành xám tối */
-    position: relative;
-    display: block;
-    z-index: 4;
-    margin:0 ;
-    padding-bottom: 0;
-    flex-wrap: wrap;
-    height: 258.1px;
-    outline: auto;
 
-}
+
+
+
 /*********************************************************************************************/
 /** điều chỉnh danh sách */
 .menu {
@@ -41,6 +29,8 @@
     justify-content: center;
     display: block;
     top: 0;
+    width: 100%;
+    height:auto;
     text-align: center;
     flex-wrap: wrap ;
 }
@@ -61,7 +51,7 @@
 }
 
 .menu {
-    position: fixed; /* Định vị phần tử menu */
+    position: relative; /* Định vị phần tử menu */
     display: inline-block; /* Hiển thị menu theo kiểu inline-block */
 
 }
@@ -117,21 +107,22 @@
 
 /* Định nghĩa content header */
 .content {
+    margin: 0  auto; /* Khoảng cách ngoài */
+    padding: 90PX ; /* Khoảng cách bên trong */
+    font-size: 14px;
     top: 100%;
-    transform: translate(0,-450px);
-    justify-content: center;
-    margin: 300px; /* Khoảng cách ngoài */
-    padding: -10%; /* Khoảng cách bên trong */
-    font-size: 20px;
-    display: inline-block;
-    text-transform: none;
+    
     font-family: Arial, Helvetica, sans-serif;
-    overflow: hidden;
+    
+    font-weight: 500;
+   
 }
 
 /* Đặt màu nền cho footer */
 .footer {
     background-color: #666; /* Màu nền */
+    width: 100%;
+    height: auto;
     
 }
 
@@ -139,7 +130,12 @@
     background-color: #605a5a; /* Màu nền cho sitemap */
     align-content: center; /* Căn giữa nội dung */
     font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    height: auto;
 }
+
+
+
 
 .footer-sitemap a {
     color: #ae9898; /* Màu chữ cho các liên kết trong sitemap */
@@ -181,67 +177,66 @@
 /* Định nghĩa nội dung hình ảnh (ảnh chính) */
 .img-content {
     position: relative; /* Định vị phần tử */
-    padding-top: 10px; /* Khoảng cách trên */
-    display: inline-flex;
+    padding-top: 0; /* Khoảng cách trên */
+    margin-top:-180px;
     flex-wrap: wrap;
     
     
 }
+
+
 
 .img-content img {
-    width: 1800px; /* Chiều rộng hình ảnh */
-    height: 650px; /* Chiều cao */
-    object-fit: none; /* Cách xử lý hình ảnh */
-    position: relative; /* Định vị phần tử */
-    display: flex;
-    flex-wrap: wrap;
-    
-}
+display: block;
+top: 100%;
+width: 400px auto;
+height: auto;
+
+margin: 190px auto;
+padding:0 ;
+max-height: 600px;
+ display: block;
+}   
 
 .img-content h2{
-    position: relative; /* Định vị phần tử */
-    left: -0.1cm;
-    transform: translate(25.5%,-275%); /* Di chuyển vị trí */
+    position: absolute; /* Định vị phần tử */
+    left: 400px;
+    top: 190px ;
+    display: block;
     color: white; 
-    font-size: 61px; /* Kích thước chữ */
+    font-size: 35px; /* Kích thước chữ */
     font-weight: bold; /* Đậm chữ */
     background-color: rgba(93, 70, 70, 0.5); /* Màu nền với độ trong suốt */
-    padding: 8px; /* Khoảng cách bên trong */
+    padding:60px; /* Khoảng cách bên trong */
     text-align: center; /* Căn giữa nội dung */
-    width: 1181px;
-    height: auto;
-    display: inline-block;
+
+    max-height: 800px;
+    max-width: 900px;
+    
+
+    
     z-index: 2;
-}
-h2{
-    display: block;
-    font-size: 1.5em;
-    margin-block-start: 0.83em;
-    margin-block-end: 0.83em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-weight: bold;
-    unicode-bidi: isolate;
 }
 
 /* img sinh viên*/
 .img-sinhvien {
-    position: relative;
-    margin: 20px;
+    
+    margin: 0;
     padding: 0;
     display:block;
-    left: -90px;
-    line-height: 1em;
-    text-transform: none;
+    left: 0;
+
+
 }
 .img-sinhvien img{
-    width: 400px;
-    height: auto;
-    top: 0;
-    left: 0;
-    position: relative;
-    padding-bottom: 0;
-    display: inline-block;
+    width: 270px auto;
+    height: 240px;
+    max-height: 300px ;
+    max-width: 300px;
+    background-color: gray;
+    padding: 1px;
+
+    display: inline-flex;
 }
 .img-sinhvien a {
     top: 0;
@@ -249,19 +244,20 @@ h2{
     font-weight: bold;
     align-content: center;
     font-family:  'Arial';
-    font-size:22.3px;
-    margin: 0;
+    font-size:16px;
+    margin: 0 auto;
     border: 0;
-    padding: 0;
-    text-decoration: none;
+    
+    text-decoration: none;  
     display: inline;
     
 }
 .img-sinhvien li {
-   
+
     list-style: none;
     display: inline-block;
     padding: 30px;
+    width: 0 auto;
 }
 
 
