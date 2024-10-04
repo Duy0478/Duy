@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Đăng kí</title>
+  <link rel="stylesheet" href="blog.css">
+
+</head>
+<body>
+  <header >
+    <div>
+      <!-----   Menu          -->
+        <nav>
+            <ul class="menu"> <!-- Các mục trong menu -->
+               
+                    <h1 align="left" class="mau">BLOG</h1> <!-- Tiêu đề của blog -->
+               
+                <div align="right"> <!-- Căn chỉnh phần tìm kiếm và đăng ký -->
+                    <div class="timkiem"> <!-- Phần tìm kiếm -->
+                        <input type="text" placeholder="Tìm kiếm" name="" id="blog.js"> <!-- Ô nhập tìm kiếm -->
+                        <style>
+                            .timkiem input {
+                                transform: translate(-40px,-30px); /* Điều chỉnh vị trí ô nhập */
+                                display: flex;
+                                padding: 5px; /* Padding cho ô nhập */
+                                outline: 0; 
+                            }
+                            .timkiem img {
+                                display: block;   
+                                transform: translate(-40px,-58px); /* Điều chỉnh vị trí biểu tượng tìm kiếm */
+                                width: 30px; /* Chiều rộng biểu tượng */
+                                height: 30px; /* Chiều cao biểu tượng */
+                            }
+                    
+                        </style>
+                        <img src="./jpg/img điều hướng/search-vector-icon-on-transparent-260nw-1135840928_preview_rev_1.png" alt="Lỗi" onclick="console.log('đang kiếm')" href="#"> <!-- Biểu tượng tìm kiếm -->
+                    </div>
+                    <div class="div">
+                        <a href="#" style="text-decoration: none;"> <!-- Liên kết đăng ký tư vấn -->
+                            <span style="color: white;"><b>Đăng nhập</b></span>
+                        </a>
+                    </div>
+                </div>
+                <!-- Các mục menu với thông báo alert -->
+                <li><a href="#" onclick="alert('Trang chủ')"><span style="color: rgb(255, 255, 255);"><h3>Trang Chủ</h3></span></a></li>
+                <li><a href="index.html" onclick="alert('Chương trình học')"><span style="color: rgb(255, 255, 255);"><h3>Chương trình học</h3></span></a></li>
+                <li>
+                    <span style="color: rgb(255, 255, 255);font-weight: bold;"><h3>Đội Ngũ</h3></span>
+                    <ul class="sumbmenu"> <!-- Menu con cho Đội ngũ -->
+                        <li><a href="#" onclick="alert('Tutor')"><span style="color: rgb(255, 255, 255);">Tutor</span></a></li>
+                        <li><a href="#" onclick="alert('Gia Sư')"><span style="color: rgb(255, 255, 255);">Gia Sư</span></a></li>
+                    </ul>
+                </li>
+                <li><a href="#"><span style="color: rgb(255, 255, 255);"><h3>Sự Kiện</h3></span></a></li>
+                <li><a href="#"><span style="color: rgb(255, 255, 255);"><h3>Hướng Nghiệp</h3></span></a></li>
+                <li><a href="#"><span style="color: rgb(255, 255, 255);"><h3>Học đường</h3></span></a></li>
+                <li><a href="index.html" onclick="alert('Chào mừng đến với trường học của chúng tôi')"><span style="color: rgb(255, 255, 255);"><h3>Vào Học</h3></span></a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<form action="submit_page.php" method="post" class="dangki">  
+  <label for="username">Tên người dùng:</label>  
+  <input type="text" id="username" name="username" required>  
+  <br>  
+  <label for="email">Email:</label>  
+  <input type="email" id="email" name="email" required>  
+  <br>  
+  <input type="submit" value="Gửi">  
+</form>
+</body>
+</html>

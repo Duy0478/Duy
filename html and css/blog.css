@@ -25,8 +25,8 @@ body{
     position: fixed; /* Định vị phần tử */
     z-index: 1; /* Thêm z-index để đảm bảo thứ tự hiển thị */
     font-size: 100%;
-    align-items: center;
-    justify-content: center;
+    
+    
     display: block;
     top: 0;
     width: 100%;
@@ -103,23 +103,33 @@ body{
     align-content: center; /* Căn giữa nội dung */
     text-align: center;
     display: block;
+    text-decoration:none;
 }
 
 /* Định nghĩa content header */
 .content {
     margin: 0  auto; /* Khoảng cách ngoài */
-    padding: 90PX ; /* Khoảng cách bên trong */
-    font-size: 14px;
-    top: 100%;
-    
+    padding: 0 ; /* Khoảng cách bên trong */
+    font-size: 100%;
+    top: 50%;
+    left: 10%;
+    position: relative;
     font-family: Arial, Helvetica, sans-serif;
-    
+    line-height: normal;
     font-weight: 500;
+    display: block;
+    
    
 }
 
+.div-content{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    top: 100%;
+
+}
 /* Đặt màu nền cho footer */
 .footer {
+   
     background-color: #666; /* Màu nền */
     width: 100%;
     height: auto;
@@ -168,7 +178,7 @@ body{
     color: red; 
     font-weight: bold; 
     display: inline-block; /* Hiển thị theo kiểu inline-block */
-    font-size: 1em;
+    font-size: 100%;
     font-family:Arial, Helvetica, sans-serif;
 }
 
@@ -176,7 +186,7 @@ body{
 
 /* Định nghĩa nội dung hình ảnh (ảnh chính) */
 .img-content {
-    position: relative; /* Định vị phần tử */
+    position:relative; /* Định vị phần tử */
     padding-top: 0; /* Khoảng cách trên */
     margin-top:-180px;
     flex-wrap: wrap;
@@ -189,32 +199,27 @@ body{
 .img-content img {
 display: block;
 top: 100%;
-width: 400px auto;
-height: auto;
-
+width: 100px 30px auto;
+height: 450px;
+padding: 45px 0;
 margin: 190px auto;
 padding:0 ;
 max-height: 600px;
- display: block;
+position: relative;
 }   
 
-.img-content h2{
-    position: absolute; /* Định vị phần tử */
-    left: 400px;
-    top: 190px ;
-    display: block;
-    color: white; 
-    font-size: 35px; /* Kích thước chữ */
-    font-weight: bold; /* Đậm chữ */
-    background-color: rgba(93, 70, 70, 0.5); /* Màu nền với độ trong suốt */
-    padding:60px; /* Khoảng cách bên trong */
-    text-align: center; /* Căn giữa nội dung */
+.img-content h3{
+            position: absolute;  
+            top: 50%; /* Đưa chữ xuống giữa hình ảnh */  
+            left: 50%; /* Đưa chữ sang giữa hình ảnh */  
+            transform: translate(-50%, -427%); /* Căn giữa chính xác */  
+            color: white; /* Màu chữ */  
+            font-size: 22.3px; /* Kích thước chữ */  
+            font-weight: bold; /* Đậm chữ */  
+            background-color: rgba(255, 41, 84, 0.237);
+            
 
-    max-height: 800px;
-    max-width: 900px;
-    
-
-    
+            display: inline-block;
     z-index: 2;
 }
 
@@ -225,6 +230,7 @@ max-height: 600px;
     padding: 0;
     display:block;
     left: 0;
+   
 
 
 }
